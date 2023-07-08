@@ -1,0 +1,226 @@
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+hr.horizontal {
+  display: inline-block;
+  width: 2px;
+  height: 90px;
+  border: none;
+  background-color: lightgray;
+
+  line-height: 0;
+}
+
+/* 내비게이션 바 */
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  height: 87px;
+
+  background-color: white;
+  box-shadow: 0 0 20px lightgray;
+}
+
+#navbar > button {
+  background: none;
+  border: none;
+
+  font-size: 25px;
+}
+
+#navbar > button:first-of-type {
+  position: absolute;
+  left: 40px;
+  top: 0;
+  bottom: 0;
+}
+
+#navbar > button:nth-of-type(2) {
+  position: absolute;
+  right: 40px;
+  top: 0;
+  bottom: 0;
+}
+
+#title {
+  font-size: 45px;
+  font-weight: 800;
+
+  text-align: center;
+  line-height: 87px;
+}
+
+/* 헤더 영역 - 타이틀 */
+#header-section {
+  padding: 167px 25px 40px;
+}
+
+#header-title-container {
+  text-align: center;
+}
+
+#header-title-container > a {
+  display: inline-block;
+  margin-top: 7px;
+
+  font-size: 20px;
+  font-weight: 800;
+  color: #1a48c8;
+}
+
+#header-title-container > a > span {
+  color: black;
+  font-weight: 600;
+}
+
+#subtitle {
+  font-size: 77px;
+  font-weight: 800;
+  line-height: 100%;
+  text-align: center;
+}
+
+/* 헤더 영역 - 메뉴 */
+#header-menu-container {
+  margin-top: 40px;
+  padding: 25px 0;
+  border-top: 8px solid black;
+  border-bottom: 4px solid black;
+}
+
+#header-menu-container > a,
+#header-menu-container > button {
+  display: inline-block;
+
+  width: 75px;
+  height: 75px;
+
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  background-color: #1a48c8;
+
+  line-height: 75px;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+#header-menu-container > :not(:first-child) {
+  margin-left: 20px;
+}
+
+/* 1위 영역 - 배너 */
+#rank-first-banner-container {
+  padding: 0 30px;
+
+  background-color: black;
+  color: white;
+}
+
+#rank-first-banner-container > p {
+  display: inline-block;
+  font-size: 150px;
+  font-weight: 800;
+}
+
+#rank-first-banner-container > div {
+  display: inline-block;
+
+  margin-left: 20px;
+}
+
+#rank-first-banner-container > div a {
+  color: white;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+#rank-first-banner-container > div p {
+  margin-top: 5px;
+
+  color: white;
+  font-size: 28px;
+  font-weight: 400;
+}
+
+/* 1위 영역 - 정보 */
+#rank-first-info-tab {
+  padding: 30px 0;
+}
+
+#rank-first-info-tab > button {
+  width: 33%;
+  border: none;
+  background: none;
+
+  color: gray;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+#rank-first-info-tab > button.selected {
+  position: relative;
+
+  color: #1a48c8;
+}
+
+#rank-first-info-tab > button.selected::after {
+  content: "";
+
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  width: 60px;
+  height: 8px;
+  background-color: #1a48c8;
+}
+
+#rank-first-info-tab > button:hover {
+  color: black;
+}
+
+#rank-first-info-content > div {
+  display: inline-block;
+  padding: 12px 0;
+
+  width: calc((100% - 6px) / 3 - 3px);
+  border: none;
+  background: none;
+
+  color: black;
+  font-weight: 800;
+}
+
+#rank-first-info-content p {
+  text-align: center;
+}
+
+#rank-first-info-content p:nth-child(2) {
+  margin-top: 15px;
+  font-size: 45px;
+}
